@@ -1,0 +1,111 @@
+This is the Xinu config program that allows one to specify a set of
+device drivers.
+
+Input: the program reads specifications from an input file, usually
+
+		Configuration
+
+
+Output: the program produces two ouput files, usually
+
+		conf.h	- configuration constants and declarations
+				for device drivers and the device
+				switch table
+
+		conf.c	- initialization code for data strcutures
+				declared in conf.h
+		
+
+The input file consists of three sections, with %% used as a sparator
+between sections:
+
+----------------------------------------------------------------------------
+
+	/* Comments can appear anywhere in the input file; use	*/
+	/*	the C style of slash-star ... star-slash.	*/
+	/* The config program ignores whitespace and comments.	*/
+
+
+	device type declarations
+
+%%
+
+	device declarations
+
+%%
+
+	Other constants added to conf.h (typically, #defines)
+
+----------------------------------------------------------------------------
+
+
+**************************** Type Declarations *****************************
+
+
+The type declaration section consists of a series of entries of the form:
+
+	type_name:  on  hardware_name  [options]
+
+where
+
+	type_name	a name for the type
+	:		a required punctuation, usually appended onto the
+				type name
+	on		a keyword
+	hardware_name	any string used to allow a type name to have
+				two implementations
+	options		multiple options can be specified, and each
+				consists of a flag and the name of a
+				driver function or hardware parameter
+				(the minus sign in front of a flag
+				can be omitted):
+
+				-i	initialization_function
+				-o	open_function
+				-r	read_function
+				-w	write_function
+				-s	seek_function
+				-c	close_function
+				-g	getc_function
+				-p	putc_function
+				-n	control_function
+				-intr	interrupt_handler
+				-csr	CSR address
+				-irq	Interrupt request number
+
+Example:
+
+
+	eth:        on quark_eth
+		-i ethinit      -o ioerr        -c ioerr
+		-r ethread      -g ioerr        -p ioerr
+		-w ethwrite     -s ioerr        -n ethcontrol
+		-intr ethdispatch
+
+
+*************************** Device Declarations ****************************
+
+
+The device declaration section consists of one entry per device in the form:
+
+	device_name	is type_name on hardware_name [options]
+
+where
+
+	device_name	a name for the device (by convention, Xinu
+				uses upper-case device names)
+	is		a keyword
+	type_name	the name of a type defined above
+	on		a keyword
+	hardware_name	must match one of the hardware names used with
+				when the type was defined
+	options		the same as the options above -- any values used
+				on a device declaration override the
+				values defined for the type.  Typically,
+				a type does not have specific hardware
+				parameters, so they must be filled in.
+	
+Example:
+
+
+	ETHER is eth  on quark_eth  csr 0001770 -irq 0053

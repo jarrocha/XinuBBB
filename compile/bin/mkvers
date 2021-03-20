@@ -1,0 +1,27 @@
+#!/bin/sh
+#
+# Generate a new version string to be printed at startup
+#
+# Use is:   mkvers platform_name
+
+VERS_NUM_FILE=.vers_num
+
+case $# in
+    1)	PLAT="$1"
+	;;
+    *)	echo 'use is:  mkvers platform_name' >&2
+	exit 1
+	;;
+esac
+		
+if test -s $VERS_NUM_FILE; then
+	OLD_VERS=`cat $VERS_NUM_FILE`
+	VERS=`expr $OLD_VERS + 1`
+else
+	VERS=1
+fi
+echo $VERS > $VERS_NUM_FILE
+if test "x$USER" = "x"; then
+       USER=`who am i | sed 's/ .*//'`
+fi
+echo "Xinu for $PLAT -- version #$VERS  ($USER)  `date`"

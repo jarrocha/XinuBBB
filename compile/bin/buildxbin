@@ -1,0 +1,38 @@
+#!/usr/bin/perl
+#########################################################################
+#
+# buildxbin - Creates an xboot Xinu image from a binary Xinu image
+#             Adds the xboot header to the Xinu image
+#
+#########################################################################
+
+use strict;
+
+my $header_version = 0;       # xboot header version
+my $header_size = 512;        # xboot header size
+my $load_address = 0x100000;  # Load Xinu at 1 MB
+my @xboot_header = (0x58, 0x69, 0x6E, 0x75);  # xboot signature - the 4 characters 'X', 'i', 'n', 'u'
+
+my $xinu_img_in = shift or die "Usage: buildxbin xinu.bin xinu.xbin\n";
+my $xinu_img_out = shift or die "Usage: buildxbin xinu.bin xinu.xbin\n";
+
+# Determine image size
+my $xinu_img_size = -s $xinu_img_in;
+
+# Determine the image checksum
+my $checksum = `/usr/bin/crc32 $xinu_img_in`;
+chomp $checksum;
+my $checksum_int = hex $checksum;
+
+# Create the xboot header
+my $header_string = pack("C4LLLLLC4", (@xboot_header, $header_version, $load_address, $load_address, $xinu_img_size, $checksum_int, @xboot_header));
+my $pad_size = $header_size - length($header_string) - 1;  # pack will output header string as null terminated so reduce the padding by 1
+
+# Output the xboot header
+open(my $xinu_out, '>:raw', $xinu_img_out) or die "Unable to open $xinu_img_out: $!\n";
+print $xinu_out pack("Z*", $header_string);
+print $xinu_out pack("x$pad_size");
+close($xinu_out);
+
+# Add the Xinu image
+system("cat $xinu_img_in >> $xinu_img_out");

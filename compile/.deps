@@ -1,0 +1,2683 @@
+ascdate.o: ../system/ascdate.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+bufinit.o: ../system/bufinit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+chprio.o: ../system/chprio.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+clkhandler.o: ../system/clkhandler.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+clkinit.o: ../system/clkinit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+close.o: ../system/close.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+conf.o: ../system/conf.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+control.o: ../system/control.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+create.o: ../system/create.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+evec.o: ../system/evec.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+exit.o: ../system/exit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+freebuf.o: ../system/freebuf.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+freemem.o: ../system/freemem.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+getbuf.o: ../system/getbuf.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+getc.o: ../system/getc.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+getdev.o: ../system/getdev.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+getitem.o: ../system/getitem.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+getmem.o: ../system/getmem.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+getpid.o: ../system/getpid.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+getprio.o: ../system/getprio.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+getstk.o: ../system/getstk.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+getticks.o: ../system/getticks.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+gettime.o: ../system/gettime.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+getutime.o: ../system/getutime.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+init.o: ../system/init.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+initialize.o: ../system/initialize.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+insert.o: ../system/insert.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+insertd.o: ../system/insertd.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ioerr.o: ../system/ioerr.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ionull.o: ../system/ionull.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+kill.o: ../system/kill.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+kprintf.o: ../system/kprintf.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h ../include/stdarg.h
+main.o: ../system/main.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+mark.o: ../system/mark.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+meminit.o: ../system/meminit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+mkbufpool.o: ../system/mkbufpool.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+newqueue.o: ../system/newqueue.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+open.o: ../system/open.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+panic.o: ../system/panic.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+platinit.o: ../system/platinit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ptclear.o: ../system/ptclear.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ptcount.o: ../system/ptcount.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ptcreate.o: ../system/ptcreate.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ptdelete.o: ../system/ptdelete.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ptinit.o: ../system/ptinit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ptrecv.o: ../system/ptrecv.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ptreset.o: ../system/ptreset.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ptsend.o: ../system/ptsend.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+putc.o: ../system/putc.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+queue.o: ../system/queue.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+read.o: ../system/read.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ready.o: ../system/ready.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+receive.o: ../system/receive.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+recvclr.o: ../system/recvclr.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+recvtime.o: ../system/recvtime.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+resched.o: ../system/resched.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+resume.o: ../system/resume.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+seek.o: ../system/seek.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+semcount.o: ../system/semcount.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+semcreate.o: ../system/semcreate.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+semdelete.o: ../system/semdelete.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+semreset.o: ../system/semreset.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+send.o: ../system/send.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+signal.o: ../system/signal.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+signaln.o: ../system/signaln.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+sleep.o: ../system/sleep.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+suspend.o: ../system/suspend.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+unsleep.o: ../system/unsleep.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+userret.o: ../system/userret.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+wait.o: ../system/wait.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+wakeup.o: ../system/wakeup.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+write.o: ../system/write.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xdone.o: ../system/xdone.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+yield.o: ../system/yield.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+abs.o: ../lib/abs.c
+atoi.o: ../lib/atoi.c
+atol.o: ../lib/atol.c
+bzero.o: ../lib/bzero.c
+ctype_.o: ../lib/ctype_.c ../include/ctype.h
+doprnt.o: ../lib/doprnt.c ../include/stdarg.h
+doscan.o: ../lib/doscan.c ../include/ctype.h
+fdoprnt.o: ../lib/fdoprnt.c ../include/stdarg.h
+fgetc.o: ../lib/fgetc.c
+fgets.o: ../lib/fgets.c
+fprintf.o: ../lib/fprintf.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h ../include/stdarg.h
+fputc.o: ../lib/fputc.c
+fputs.o: ../lib/fputs.c
+fscanf.o: ../lib/fscanf.c
+getchar.o: ../lib/getchar.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+labs.o: ../lib/labs.c
+memchr.o: ../lib/memchr.c
+memcmp.o: ../lib/memcmp.c
+memcpy.o: ../lib/memcpy.c
+memset.o: ../lib/memset.c
+printf.o: ../lib/printf.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h ../include/stdarg.h
+putchar.o: ../lib/putchar.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+qsort.o: ../lib/qsort.c
+rand.o: ../lib/rand.c ../include/stdlib.h
+sprintf.o: ../lib/sprintf.c ../include/stdarg.h
+sscanf.o: ../lib/sscanf.c
+strchr.o: ../lib/strchr.c
+strcmp.o: ../lib/strcmp.c
+strcpy.o: ../lib/strcpy.c
+strlen.o: ../lib/strlen.c
+strncat.o: ../lib/strncat.c
+strncmp.o: ../lib/strncmp.c
+strncpy.o: ../lib/strncpy.c
+strnlen.o: ../lib/strnlen.c
+strrchr.o: ../lib/strrchr.c
+strstr.o: ../lib/strstr.c
+ttycontrol.o: ../device/tty/ttycontrol.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ttygetc.o: ../device/tty/ttygetc.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ttyhandle_in.o: ../device/tty/ttyhandle_in.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ttyhandle_out.o: ../device/tty/ttyhandle_out.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ttyhandler.o: ../device/tty/ttyhandler.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ttyinit.o: ../device/tty/ttyinit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ttykickout.o: ../device/tty/ttykickout.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ttyputc.o: ../device/tty/ttyputc.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ttyread.o: ../device/tty/ttyread.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ttywrite.o: ../device/tty/ttywrite.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+mount.o: ../device/nam/mount.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+naminit.o: ../device/nam/naminit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+nammap.o: ../device/nam/nammap.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+namopen.o: ../device/nam/namopen.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ethcontrol.o: ../device/eth/ethcontrol.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ethhandler.o: ../device/eth/ethhandler.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ethinit.o: ../device/eth/ethinit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ethread.o: ../device/eth/ethread.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ethwrite.o: ../device/eth/ethwrite.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rdsbufalloc.o: ../device/rds/rdsbufalloc.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rdsclose.o: ../device/rds/rdsclose.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rdscomm.o: ../device/rds/rdscomm.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rdscontrol.o: ../device/rds/rdscontrol.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rdsinit.o: ../device/rds/rdsinit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rdsopen.o: ../device/rds/rdsopen.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rdsprocess.o: ../device/rds/rdsprocess.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rdsread.o: ../device/rds/rdsread.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rdswrite.o: ../device/rds/rdswrite.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ramclose.o: ../device/ram/ramclose.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+raminit.o: ../device/ram/raminit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h ../include/ramdisk.h
+ramopen.o: ../device/ram/ramopen.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ramread.o: ../device/ram/ramread.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h ../include/ramdisk.h
+ramwrite.o: ../device/ram/ramwrite.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h ../include/ramdisk.h
+lfdballoc.o: ../device/lfs/lfdballoc.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lfdbfree.o: ../device/lfs/lfdbfree.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lfflush.o: ../device/lfs/lfflush.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lfgetmode.o: ../device/lfs/lfgetmode.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lfiballoc.o: ../device/lfs/lfiballoc.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lfibclear.o: ../device/lfs/lfibclear.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lfibget.o: ../device/lfs/lfibget.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lfibput.o: ../device/lfs/lfibput.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lflclose.o: ../device/lfs/lflclose.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lflcontrol.o: ../device/lfs/lflcontrol.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lflgetc.o: ../device/lfs/lflgetc.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lflinit.o: ../device/lfs/lflinit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lflputc.o: ../device/lfs/lflputc.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lflread.o: ../device/lfs/lflread.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lflseek.o: ../device/lfs/lflseek.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lflwrite.o: ../device/lfs/lflwrite.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lfscheck.o: ../device/lfs/lfscheck.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h ../include/ramdisk.h
+lfsckfmt.o: ../device/lfs/lfsckfmt.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h ../include/ramdisk.h
+lfscreate.o: ../device/lfs/lfscreate.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h ../include/ramdisk.h
+lfsetup.o: ../device/lfs/lfsetup.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lfsinit.o: ../device/lfs/lfsinit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lfsopen.o: ../device/lfs/lfsopen.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+lftruncate.o: ../device/lfs/lftruncate.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rflclose.o: ../device/rfs/rflclose.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rflgetc.o: ../device/rfs/rflgetc.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rflinit.o: ../device/rfs/rflinit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rflputc.o: ../device/rfs/rflputc.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rflread.o: ../device/rfs/rflread.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rflseek.o: ../device/rfs/rflseek.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rflwrite.o: ../device/rfs/rflwrite.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rfscomm.o: ../device/rfs/rfscomm.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rfscontrol.o: ../device/rfs/rfscontrol.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rfsgetmode.o: ../device/rfs/rfsgetmode.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rfsinit.o: ../device/rfs/rfsinit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rfsndmsg.o: ../device/rfs/rfsndmsg.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+rfsopen.o: ../device/rfs/rfsopen.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+spicontrol.o: ../device/spi/spicontrol.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+spiinit.o: ../device/spi/spiinit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+gpiocontrol.o: ../device/gpio/gpiocontrol.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+gpiohandler.o: ../device/gpio/gpiohandler.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+gpioinit.o: ../device/gpio/gpioinit.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+gpioread.o: ../device/gpio/gpioread.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+gpioselect.o: ../device/gpio/gpioselect.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+gpiowrite.o: ../device/gpio/gpiowrite.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+arp.o: ../net/arp.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+dhcp.o: ../net/dhcp.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+dns.o: ../net/dns.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h ../include/dns.h
+dot2ip.o: ../net/dot2ip.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+hexdump.o: ../net/hexdump.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+icmp.o: ../net/icmp.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ip.o: ../net/ip.c ../include/xinu.h ../include/kernel.h ../include/conf.h \
+ ../include/process.h ../include/queue.h ../include/resched.h \
+ ../include/semaphore.h ../include/memory.h ../include/bufpool.h \
+ ../include/clock.h ../include/mark.h ../include/ports.h \
+ ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+net.o: ../net/net.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+pdump.o: ../net/pdump.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+tftp.o: ../net/tftp.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h ../include/stdlib.h
+udp.o: ../net/udp.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+addargs.o: ../shell/addargs.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h \
+ ../include/shprototypes.h
+lexan.o: ../shell/lexan.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+shell.o: ../shell/shell.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h \
+ ../include/shprototypes.h
+xsh_argecho.o: ../shell/xsh_argecho.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_arp.o: ../shell/xsh_arp.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_cat.o: ../shell/xsh_cat.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_clear.o: ../shell/xsh_clear.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_date.o: ../shell/xsh_date.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_devdump.o: ../shell/xsh_devdump.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_echo.o: ../shell/xsh_echo.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_exit.o: ../shell/xsh_exit.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_help.o: ../shell/xsh_help.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_kill.o: ../shell/xsh_kill.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_memdump.o: ../shell/xsh_memdump.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_memstat.o: ../shell/xsh_memstat.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_netinfo.o: ../shell/xsh_netinfo.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_ping.o: ../shell/xsh_ping.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_ps.o: ../shell/xsh_ps.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_sleep.o: ../shell/xsh_sleep.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_udpdump.o: ../shell/xsh_udpdump.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_udpecho.o: ../shell/xsh_udpecho.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_udpserver.o: ../shell/xsh_udpserver.c ../include/xinu.h \
+ ../include/kernel.h ../include/conf.h ../include/process.h \
+ ../include/queue.h ../include/resched.h ../include/semaphore.h \
+ ../include/memory.h ../include/bufpool.h ../include/clock.h \
+ ../include/mark.h ../include/ports.h ../include/uart.h ../include/tty.h \
+ ../include/gpio.h ../include/gpioselect.h ../include/device.h \
+ ../include/interrupt.h ../include/file.h ../include/rfilesys.h \
+ ../include/rdisksys.h ../include/lfilesys.h ../include/spi.h \
+ ../include/ether.h ../include/net.h ../include/ip.h ../include/arp.h \
+ ../include/udp.h ../include/dhcp.h ../include/icmp.h ../include/tftp.h \
+ ../include/name.h ../include/shell.h ../include/date.h \
+ ../include/prototypes.h ../include/delay.h ../include/stdio.h \
+ ../include/string.h ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+xsh_uptime.o: ../shell/xsh_uptime.c ../include/xinu.h ../include/kernel.h \
+ ../include/conf.h ../include/process.h ../include/queue.h \
+ ../include/resched.h ../include/semaphore.h ../include/memory.h \
+ ../include/bufpool.h ../include/clock.h ../include/mark.h \
+ ../include/ports.h ../include/uart.h ../include/tty.h ../include/gpio.h \
+ ../include/gpioselect.h ../include/device.h ../include/interrupt.h \
+ ../include/file.h ../include/rfilesys.h ../include/rdisksys.h \
+ ../include/lfilesys.h ../include/spi.h ../include/ether.h \
+ ../include/net.h ../include/ip.h ../include/arp.h ../include/udp.h \
+ ../include/dhcp.h ../include/icmp.h ../include/tftp.h ../include/name.h \
+ ../include/shell.h ../include/date.h ../include/prototypes.h \
+ ../include/delay.h ../include/stdio.h ../include/string.h \
+ ../include/am335x_control.h ../include/am335x_eth.h \
+ ../include/am335x_watchdog.h ../include/armv7a.h
+ctxsw.o: ../system/ctxsw.S
+intr.o: ../system/intr.S ../include/armv7a.h
+start.o: ../system/start.S ../include/armv7a.h

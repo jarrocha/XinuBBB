@@ -1,0 +1,191 @@
+/************************************************************************/
+/*									*/
+/* Configuration - Xinu device configuration specification file		*/
+/*									*/
+/* This file becomes input to the config program, which generates	*/
+/* 		conf.h  and  conf.c					*/
+/*									*/
+/* Entries for a device specify the functions that handle each of the	*/
+/* high-level I/O operations as follows:				*/
+/*									*/
+/*	-i    init	-o    open	-c    close			*/
+/*	-r    read	-w    write	-s    seek			*/
+/*	-g    getc	-p    putc	-n    control			*/
+/*	-intr int_hndlr	-csr  csr	-irq  irq			*/
+/*									*/
+/************************************************************************/
+
+/* Type Declarations for both real- and pseudo- device types */
+
+/* type of a null device */
+null:
+	on nothing
+		-i ionull	-o ionull	-c ionull
+		-r ionull	-g ionull	-p ionull
+		-w ionull	-s ioerr
+
+/* type of a gpio device */
+gpio:
+	on am335x_gpio
+		-i gpioinit      -o ionull       -c ionull
+		-r gpioread      -g ionull       -p ionull
+		-w gpiowrite     -s ioerr        -n gpiocontrol
+		-intr gpiohandler
+
+/* type of a tty device */
+tty:
+	on uart
+		-i ttyinit      -o ionull       -c ionull
+		-r ttyread      -g ttygetc      -p ttyputc
+		-w ttywrite     -s ioerr        -n ttycontrol
+		-intr ttyhandler
+
+/* type of a ethernet device */
+eth:
+	on am335x_eth
+		-i ethinit	-o ioerr	-c ioerr
+		-r ethread	-g ioerr	-p ioerr
+		-w ethwrite	-s ioerr	-n ethcontrol
+		-intr ethhandler
+
+/* type of a remote disk system device */
+rds:
+	on udp
+		-i rdsinit	-o rdsopen	-c rdsclose
+		-r rdsread	-g ioerr	-p ioerr
+		-w rdswrite	-s ioerr	-n rdscontrol
+		-intr ionull
+
+/* type of ram disk */
+ram:
+	on mem
+		-i raminit	-o ramopen	-c ramclose
+		-r ramread	-g ioerr	-p ioerr
+		-w ramwrite	-s ioerr	-n ioerr
+		-intr ionull
+
+/* type of a remote file system device */
+rfs:
+	on udp
+		-i rfsinit	-o rfsopen	-c ioerr
+		-r ioerr	-g ioerr	-p ioerr
+		-w ioerr	-s ioerr	-n rfscontrol
+		-intr ionull
+
+/* type of a remote file pseudo-device */
+rfl:
+	on rfs
+		-i rflinit	-o ioerr	-c rflclose
+		-r rflread	-g rflgetc	-p rflputc
+		-w rflwrite	-s rflseek	-n ioerr
+		-intr ionull
+
+/* type of a local file system master device */
+lfs:
+	on ram
+		-i lfsinit	-o lfsopen	-c ioerr
+		-r ioerr	-g ioerr	-p ioerr
+		-w ioerr	-s ioerr	-n ioerr
+		-intr ionull
+
+/* type of a local file pseudo-device */
+lfl:
+	on lfs
+		-i lflinit	-o ioerr	-c lflclose
+		-r lflread	-g lflgetc	-p lflputc
+		-w lflwrite	-s lflseek	-n lflcontrol
+		-intr ionull
+		
+/* type of namespace device */
+nam:
+	on top
+		-i naminit 	-o namopen 	-c ioerr
+		-r ioerr 	-g ioerr 	-p ioerr
+		-w ioerr 	-s ioerr 	-n ioerr
+		-intr ioerr
+
+spi:
+	on top
+		-i spiinit	-o ionull	-c ionull
+		-r ionull	-g ionull	-p ionull
+		-w ionull	-s ionull	-n spicontrol
+		-intr ionull
+%%
+
+/* Actual device declarations that each give the name of a device that	*/
+/*   will be present in the system					*/
+
+   /* Define the console device to be a tty and specify CSR*/
+   CONSOLE is tty  on uart  csr 0x44E09000 -irq 72
+   
+   /* Define the console device to be a tty and specify CSR*/
+   GPIO0 is gpio  on am335x_gpio  csr 0x44E07000 -irq 96
+   /* Define the console device to be a tty and specify CSR*/
+   GPIO1 is gpio  on am335x_gpio  csr 0x4804C000 -irq 98
+   /* Define the console device to be a tty and specify CSR*/
+   GPIO2 is gpio  on am335x_gpio  csr 0x481AC000 -irq 32
+   /* Define the console device to be a tty and specify CSR*/
+   GPIO3 is gpio  on am335x_gpio  csr 0x481AE000 -irq 62
+
+   /* Define a null device */
+   NULLDEV is null on nothing
+
+   /* Physical Ethernet (raw packet transfer) */
+   ETHER0 is eth   on am335x_eth csr 0 -irq 0
+
+   /* Define a namespace device */
+   NAMESPACE is nam on top
+
+   /* Define a remote disk system device */
+   RDISK is rds on udp
+   
+   /* Define a ram disk device */
+   RAM0 is ram on mem
+ 
+   /* Define the remote file system device */
+
+   RFILESYS is rfs on udp
+
+   /* Define remote file pseudo-devices */
+
+   RFILE0 is rfl on rfs
+   RFILE1 is rfl on rfs
+   RFILE2 is rfl on rfs
+   RFILE3 is rfl on rfs
+   RFILE4 is rfl on rfs
+   RFILE5 is rfl on rfs
+   RFILE6 is rfl on rfs
+   RFILE7 is rfl on rfs
+   RFILE8 is rfl on rfs
+   RFILE9 is rfl on rfs
+  
+   /* Define the local file system master device (one per system) */
+
+   LFILESYS is lfs on ram
+
+   /* Define local file pseudo-devices (multiple per system) */
+
+   LFILE0 is lfl on lfs
+   LFILE1 is lfl on lfs
+   LFILE2 is lfl on lfs
+   LFILE3 is lfl on lfs
+   LFILE4 is lfl on lfs
+   LFILE5 is lfl on lfs
+
+   /* SPI devices */
+
+   SPI0 is spi on top csr 0x48030000
+   SPI1 is spi on top csr 0x481A0000
+
+%%
+
+/* Configuration and Size Constants */
+
+#define	NPROC	     100	/* number of user processes		*/
+#define	NSEM	     100	/* number of semaphores			*/
+#define	IRQBASE	     32		/* base ivec for IRQ0			*/
+#define	IRQ_TIMER    IRQ_HW5	/* timer IRQ is wired to hardware 5	*/
+#define	IRQ_ATH_MISC IRQ_HW4	/* Misc. IRQ is wired to hardware 4	*/
+#define CLKFREQ      200000000	/* 200 MHz clock			*/
+
+#define	LF_DISK_DEV	RAM0

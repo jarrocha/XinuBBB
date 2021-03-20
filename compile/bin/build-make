@@ -1,0 +1,710 @@
+#!/bin/sh
+#########################################################################
+#									#
+# build-make  -  build entries for a makefile				#
+#									#
+# use:  build-make dir_spec...						#
+#									#
+#	where each dir_spec, which specifies one of the source		#
+#	directories to include has the form:				#
+#									#
+#		-s source_dir_path [pattern...]				#
+#									#
+#	Build-make generates rules for a Makefile that will compile	#
+#	the source files from the specified set of source directories.	#
+#	Build-make is run in the directory that will hold the Makefile,	#
+#	and assumes .o files will be placed in the  ./binaries		#
+#	directory in the same file as the Makefile.			#
+#									#
+#									#
+#	A directory specification begins with a -s srgument that is	#
+#	followed by a source directory name (a relative path is		#
+#	recommended, but not required), and a list of zero or more	#
+#	patterns.  The patterns are used to specify which files		#
+#	from source directory should be omitted from consideration.	#
+#	Build-make starts by making a list of all C and assembly	#
+#	language files in the directory (i.e. files that match *.c and	#
+#	*.[Ss]).  It then uses the set of patterns (if any are present)	#
+#	to decide which	of the files to exclude from further		#
+#	processing.  A pattern can contain literal characters plus one	#
+#	asterisk, which	indicates a wild card match.  For example,	#
+#	'xxx', 'xxx*', '*xxx', 'xxx*yyy' are legal forms of patterns.	#
+#	Note: any pattern argument that contains an asterisk must be	#
+#	enclosed in quotes on the command line to prevent the shell	#
+#	from interpreting it.  For example, to omit files that start	#
+#	with 'debug', one would specify: 'debug*' in quotes.  Omitting	#
+#	files has two purposes.  First, it allows files to be left in	#
+#	the soruce directory that are not normally needed (e.g.,	#
+#	debug.c).  Second, a programmer can specify a set of files	#
+#	for which standard compilation rules are insufficient.  Of	#
+#	course, if a programmer omits a file, the programmer must	#
+#	insert a compilation rule into the Makefile.			#
+#									#
+#	Build-make does not create a complete Makefile.  Instead,	#
+#	build-make writes text output to stdout and allows the		#
+#	programmer to use the output to construct a Makefile.		#
+#	Typically, a programmer runs:					#
+#									#
+#			build-make > Makedefs				#
+#									#
+#	and then inserts the line					#
+#									#
+#			include Makedefs				#
+#									#
+#	into a Makefile.  Doing so allows the Makedefs to be recreated	#
+#	easily if the contents of the source directories change.	#
+#									#
+#	Build-make generates two variables: SOURCE_FILES that contains	#
+#	a list of all source file names, and OBJECT_FILES that lists	#
+#	all the object files.  it also generates a list of rules	#
+#	for generating object files.  For example, a rule might		#
+#	be:								#
+#									#
+# binaries/aaa.o: ../../system/aaa.c					#
+#		  $(CC) $(CFLAGS) -o binaries/aaa.o ../../system/aaa.c	#
+#									#
+#########################################################################
+
+MSG1='use is:  build-make dir_spec...'
+MSG2='         where dir_spec is   -s source_dir_path  [pattern...]'
+
+#
+# Define prefixes shared by this script and the awk program
+#
+PRE_ERR='+ERROR:'
+PRE_DIR='+DIR:'
+PRE_OMIT='+OMIT:'
+PRE_CFILE='+CFILE:'
+PRE_SFILE='+SFILE:'
+
+export PRE_ERR PRE_DIR PRE_OMIT PRE_CFILE PRE_SFILE
+
+TMP1=".,BUILDM1-$$"
+TMP2=".,BUILDM2-$$"
+trap "rm -f $TMP1 $TMP2; exit" 1 2 3
+
+#
+# Parse arguments and generate input to the script below
+#
+
+if test $# -lt 2; then
+	echo "$MSG1" >&2
+	echo "$MSG2" >&2
+	exit 1
+fi
+
+# iterate through dirspecs
+
+(
+ > $TMP1
+ > $TMP2
+
+ while test $# -gt 0; do
+
+    # parse -s and get directory name
+
+    if test $# -lt 2; then
+	echo "$PRE_ERR"
+	echo "$MSG1" >&2
+	echo "$MSG2" >&2
+	exit 1
+    fi
+ 
+   case "x$1" in
+        x-s)	DIR="$2"
+		# verify that directory exists
+		if test  -d $DIR; then
+			echo "$PRE_DIR$DIR"
+		else
+			echo "$PRE_ERR"
+			echo "cannot find a source directory named $DIR" >&2
+			exit 1
+		fi
+		shift; shift
+		;;
+	   *)	echo 'expecting -s at start of directory specification' >&2
+		echo "$PRE_ERR"
+		echo "$MSG1" >&2
+		echo "$MSG2" >&2
+		;;
+    esac
+
+    #
+    # See if DIR contains any .c or .[sS] files
+    #
+    if test "x$DIR" = "x."; then
+	CFILES=`ls *.c    2>$TMP1`
+	SFILES=`ls *.[sS] 2>$TMP2`
+    else
+	CFILES=`ls $DIR/*.c    2>$TMP1`
+	SFILES=`ls $DIR/*.[sS] 2>$TMP2`
+    fi
+
+    if test -s $TMP1 -a -s $TMP2; then
+	(echo;echo "Warning: directory $DIR does not contain any .c or .[sS] files to compile";echo) >&2
+    fi
+    rm -f $TMP1 $TMP2
+
+    # arguments up to the next -s as patterns that specify omitted files
+
+    LOOKING=true
+    while $LOOKING; do
+	if test $# -eq 0; then
+		LOOKING=false
+	elif test "x$1" = "x-s"; then
+		LOOKING=false
+	else
+		echo "$PRE_OMIT$1"
+		shift
+	fi
+    done
+
+    # output .s and .S files for this directory
+
+    if test "x$SFILES" != "x"; then
+	for i in $SFILES; do
+		echo "$PRE_SFILE$i"
+	done
+    fi
+
+    # output .c files for this directory
+
+    if test "x$CFILES" != "x"; then
+	for i in $CFILES; do
+		echo "$PRE_CFILE$i"
+	done
+    fi
+
+ done
+) |
+
+gawk '
+
+#########################################################################
+#									#
+#									#
+#			Start of awk script				#
+#									#
+#									#
+#########################################################################
+
+####################
+#
+# function ftmlist - format a list of file names
+#
+# args are: number of names, array of names, maximum name length,
+#		directory name, prefix to use
+#
+####################
+
+function fmtlist(n,items,maxl,dname, pfix) {
+
+	if (n <= 0) {
+		return;
+	}
+
+	if (doneheading == 0) {
+		printf("\n\n%s\n%s\n%sDirectory %s\n%s\n%s\n",hdr4, hdr5, hdr6, dname, hdr5, hdr4);
+		doneheading = 1;
+	}
+	fmt2 = sprintf("\n%%-%ds\\\n",maxwid-1);
+	printf(fmt2, pfix " =");
+
+	namwid = maxl + 2;
+	#
+	# compute number of names per line allowing 2 blanks between them
+	#		and not taking more than actwid characters
+	#
+	nperline = int( (actwid+2)/(maxl+2) );
+	extrabl = actwid-(nperline*maxl + 2*(nperline-1))+1;
+	cnt = 1;
+	fmt = sprintf("%%-%ds",maxl);
+	for (i=1; i<=n ; i++) {
+		if (cnt > nperline) {
+			for (b=1; b<=extrabl; b++) {
+				printf(" ");
+			}
+			printf("\\\n");
+			cnt = 1;
+		}
+		if (cnt == 1) {
+			printf("%s", tb);
+		} else {
+			printf("  ");
+		}
+		printf(fmt, items[i]);
+		cnt++;
+	}
+	printf("\n");
+	return;
+}
+
+####################
+#
+# function isomitted - check a file name against the list of omitted patters
+#			for the current directory and report 1 if the file
+#			name is omitted
+#
+# arg: file name to check
+#
+# globals used: nomits, omits[] list of omitted	patterns (1 through nomits)
+#
+####################
+
+function isomitted(io_fname) {
+
+	io_flen = length(io_fname);
+
+	#
+	# Iterate through all omit patterns for the current directory
+	#
+
+	for (io_j=1; io_j <= nomits; io_j++) {
+
+		# Get pattern to check
+		io_omit =  omits[io_j];
+
+		# length of omit pattern
+		io_olen = length(io_omit);
+
+		# Find where "*" occurs in the pattern and set prefix length
+
+		io_plen = index(io_omit, "*") - 1;
+
+		if (io_plen < 0) {		# No * in the pattern, so check exact match
+
+			if (io_fname == io_omit) {
+				return 1;
+			} else {
+				continue;
+			}
+
+		}
+
+		# At least one * occurs in the pattern
+
+		if (io_olen == 1) {		# Pattern is just a *, so omit everything
+			return 1;
+		}
+
+		if (io_plen > 1) {		# if fixed prefix exists, check for match
+
+			# A file name shorter than the prefix is not omitted
+
+			if (io_flen < io_plen) {
+				continue;
+			}
+
+			# If prefix does not match, name is not omitted
+
+			if ( substr(io_omit, 1, io_plen) != substr(io_fname, 1, io_plen) ) {
+				continue;
+			}
+		}
+
+		# Prefix has matched; check suffix
+
+		io_slen = io_olen - io_plen -1;
+
+		if (io_slen <= 0) {	# If no suffix, pattern matches
+			return 1;
+		}
+
+		# A file name shorter than the suffix is not omitted
+
+		if (io_flen < io_slen) {
+			continue;
+		}
+
+		# If suffix in omit pattern exactly matches the suffix of the
+		#	file name, this file name is omitted
+
+		if ( substr(io_omit,  io_olen          - (io_slen - 1)) == \
+		     substr(io_fname, length(io_fname) - (io_slen - 1)) ) {
+			return 1;
+		}
+
+	}
+
+	# The file name does not match any omitted pattern, so keep it
+
+	return 0;
+}
+
+####################
+#
+# getbasename - extract the basename from a path name and return it
+#
+# arg: path name
+#
+####################
+
+function getbasename(gb_path) {
+
+	for (gb_pos = length(gb_path); gb_pos > 0; gb_pos--) {
+		if (substr(gb_path, gb_pos, 1) == "/") {
+			break;
+		}
+	}
+	if (gb_pos > 0) {
+		return substr(gb_path, gb_pos+1);
+	} else {
+		return gb_path;
+	}
+}
+
+
+####################
+#
+# Initialize variables for the awk script
+#
+####################
+
+BEGIN {
+	ndirs = 0;		# Number of directories found so far
+	maxwid = 81;		# Maximum width of formatted line
+	actwid = maxwid - 10;	# Actual width for names (line width minus 8 for tab indent and
+				#		2 for " \" at the end of the line)
+
+	tb = "	";	# Tab character
+	plen_err = length("'$PRE_ERR'");
+	plen_dir = length("'$PRE_DIR'");
+	plen_omt = length("'$PRE_OMIT'");
+	plen_cfl = length("'$PRE_CFILE'");
+	plen_sfl = length("'$PRE_SFILE'");
+
+
+	hdr1 = "#-------------------------------------------------------------------------------#";
+	hdr2 = "#										#";
+	hdr3 = "#     Definitions generated by build-make on '"`date`"'	#";
+	hdr4 = "#------------------------------------------------------------------";
+	hdr5 = "#";
+	hdr6 = "#  ";
+	hdr7 = "#    		     Rules For Generating Object Files 				#";
+	hdr8 = "#  Rules for files in directory ";
+
+	msg1 = "SRC_CFILES =";
+	msg2 = "SRC_SFILES =";
+	msg3 = "OBJ_FILES  =";
+}
+
+#
+# Skip blank lines in input
+#
+/^ *$/ {
+	next;
+}
+
+#
+# Handle errors
+#
+/^\'${PRE_ERR}'/ {
+	exit(1);
+}
+
+#
+# Start a new directory
+#
+
+/^\'$PRE_DIR'/ {
+
+	ndirs++;
+	dirs[ndirs] = substr($0,plen_dir+1);
+
+	# Initialize counts for this directory
+
+	ncfiles[ndirs] = 0;
+	nsfiles[ndirs] = 0;
+	nomits = 0;
+	next;
+}
+
+#
+# Collect list of omitted files for this directory (must occur in the input before
+#	any C or S files for the directory)
+#
+
+/^\'$PRE_OMIT'/ {
+
+	nomits++;
+	omits[nomits] = substr($0,plen_omt+1);
+	next;
+}
+
+#
+# Handle a C file from the current directory
+#
+
+/^\'$PRE_CFILE'/ {
+
+	fullname = substr($0,plen_cfl+1);
+	basename = getbasename(fullname);
+
+	# Skip omitted files
+
+	if (isomitted(basename) > 0) {
+		next;
+	}
+
+	ncfiles[ndirs]++;
+	cpath[ndirs "%" ncfiles[ndirs]] = fullname;
+	cfile[ndirs "%" ncfiles[ndirs]] = basename;
+
+	next;
+}
+
+#
+# Handle as S file from the current directory
+#
+
+/^\'$PRE_SFILE'/ {
+
+	fullname = substr($0,plen_sfl+1);
+	basename = getbasename(fullname);
+
+	# Skip omitted files
+
+	if (isomitted(basename) > 0) {
+		next;
+	}
+
+	nsfiles[ndirs]++;
+	spath[ndirs "%" nsfiles[ndirs]] = fullname;
+	sfile[ndirs "%" nsfiles[ndirs]] = basename;
+
+	next;
+}
+
+
+#
+# Any other input line is unexpected
+#
+
+{
+	print "Error: unexpected input line ->", $0;
+	exit 1;
+}
+
+END {
+	#################################################################
+	#								#
+	#    Do all the work of formatting and printing the makefile	#
+	# rules.  Start by printing an initial comment block and the	#
+	# variable initializtion statements.				#
+	#								#
+	#################################################################
+
+	printf("%s\n%s\n%s\n%s\n%s\n\n",hdr1, hdr2, hdr3, hdr2, hdr1);
+	printf("%s\n%s\n\n",msg1, msg2, msg3);
+
+	totlen = 0;	# max over valid source file names in all directories
+
+	#################################################################
+	#								#
+	# Iterate over all directories and generate a unique prefix	#
+	# to be used on make variables for each directory		#
+	#								#
+	#################################################################
+
+	totlen = 0;	# max file name length across all directories
+
+	for (d=1; d<=ndirs; d++) {
+
+	    # Generate a unique variable name prefix for this directory
+
+	    dirpath = dirs[d];
+	    strt = 1;
+	    str = toupper(dirpath);
+	    finish = length(str);
+	    ch = substr(str,strt,1);
+	    while ( (ch == ".") || (ch == "/") ) {
+		strt++;
+		if (strt > finish) {
+			break;
+		}
+		ch = substr(str,strt,1);
+	    }
+	    if (strt > finish) {
+		if (substr(str,1,1) == ".") {
+			prefix = "DOT";
+		} else {
+			prefix = "SLASH";
+		}
+		for (i=2; i<=finish; i++) {
+			if (substr(str,i,1) == ".") {
+				prefix = prefix "_DOT";
+			} else {
+				prefix = prefix "_SLASH";
+			}
+		}
+	    } else {
+		prefix = "";
+		for (i=strt; i<=finish; i++) {
+			ch = substr(str,i,1);
+			if (ch == "/") {
+				prefix = prefix "_";
+			} else {
+				prefix = prefix ch;
+			}
+		}
+	    }
+	    pref[d] = prefix;
+
+	    doneheading = 0;
+
+	    #
+	    # Compute the maximum length of a file name in this directory
+	    #		and update the max length across all directories
+	    #
+
+	    maxlen = 0;		# max file name length for this directory
+
+	    # Check S files first
+
+	    for (i = 1; i <= nsfiles[d]; i++) {
+		srcsfiles[i] = sfile[d "%" i]
+		l = length(srcsfiles[i]);
+		if (l > maxlen) {
+			maxlen = l;
+		}
+	    }
+	    if (maxlen > totlen) {	# update global max across all directories
+		totlen = maxlen;
+	    }
+
+	    # Check C files
+
+	    for (i = 1; i <= ncfiles[d]; i++) {
+		srccfiles[i] = cfile[d "%" i]
+		l = length(srccfiles[i]);
+		if (l > maxlen) {
+			maxlen = l;
+		}
+	    }
+	    if (maxlen > totlen) {	# update global max across all directories
+		totlen = maxlen;
+	    }
+
+	    # Format the list of S files for this directory
+
+	    fmtlist(nsfiles[d], srcsfiles, maxlen, dirs[d], pref[d] "_SFILES");
+
+	    # Format the list of C files for this directory
+
+	    fmtlist(ncfiles[d], srccfiles, maxlen, dirs[d], pref[d] "_CFILES");
+
+	    printf("\n");
+
+	    #
+	    # Generate assignments for Makefile variables
+	    #
+
+	    nasn = 0;
+
+	    #
+	    # Generate assignments for variables  SRC_CFILES and SRC_SFILES
+	    #
+	    if (ncfiles[d] > 0) {
+		nasn++;
+		asnl[nasn] = "SRC_CFILES";
+		asnr[nasn] = sprintf("+= ${%s_CFILES}", pref[d]);
+	    }
+	    if (nsfiles[d] > 0) {
+		nasn++;
+		asnl[nasn] = "SRC_SFILES";
+		asnr[nasn] = sprintf("+= ${%s_SFILES}", pref[d]);
+	    }
+
+	    #
+	    # Generate assignments for variables  prefix_CFULL and prefix_SFULL
+	    #
+
+	    if (ncfiles[d] > 0) {
+		nasn++;
+		asnl[nasn] = sprintf("%s_CFULL", prefix);
+		asnr[nasn] = sprintf("+= ${%s_CFILES:%%=%s/%%}", pref[d], dirs[d]);
+	    }
+	    if (nsfiles[d] > 0) {
+		nasn++;
+		asnl[nasn] = sprintf("%s_SFULL", prefix);
+		asnr[nasn] = sprintf("+= ${%s_SFILES:%%=%s/%%}", pref[d], dirs[d]);
+	    }
+
+	    #
+	    # Generate assignments for variables  SRC_CFULL and SRC_SFULL
+	    #
+
+	    if (ncfiles[d] > 0) {
+		nasn++;
+		asnl[nasn] = "SRC_CFULL";
+		asnr[nasn] = sprintf("+= ${%s_CFULL}", pref[d]);
+	    }
+	    if (nsfiles[d] > 0) {
+		nasn++;
+		asnl[nasn] = "SRC_SFULL";
+		asnr[nasn] = sprintf("+= ${%s_SFULL}", pref[d]);
+	    }
+	    wid = 0;
+	    for (i=1; i<=nasn; i++) {
+		n = length(asnl[i]);
+		if (n > wid) {
+			wid = n;
+		}
+	    }
+	    fmt3 = sprintf("%%-%ds %%s\n", wid);
+	    for (i=1; i<=nasn; i++) {
+		printf(fmt3, asnl[i], asnr[i]);
+	    }
+	}
+
+	printf("\n\n%s\n%s\n%s\n%s\n%s\n\n", hdr1, hdr2, hdr7, hdr2, hdr1);
+
+	printf("OBJ_TMP     = ${patsubst %%.s,%%.o,$(SRC_SFILES)}    #	substitute .s => .o\n");
+	printf("OBJ_SFILES  = ${patsubst %%.S,%%.o,$(OBJ_TMP)}       #	substitute .S => .o\n");
+        printf("OBJ_CFILES  = ${patsubst %%.c,%%.o,$(SRC_CFILES)}    #	substitute .c => .o\n");
+	printf("OBJ_LIST    = ${OBJ_CFILES} ${OBJ_SFILES}\n");
+	printf("OBJ_FILES   = ${OBJ_LIST:%%=binaries/%%}\n");
+	printf("SRC_FULL    = ${SRC_CFULL} ${SRC_SFULL}\n");
+
+	fmt4c = sprintf("%%-%ds%%s\n\t${CC} ${CFLAGS} -o %%s %%s\n",9+totlen+3);
+	fmt4s = sprintf("%%-%ds%%s\n\t${CC} ${CFLAGS} -o %%s %%s\n",9+totlen+3);
+	for (d=1; d<=ndirs; d++) {
+	    needheadings = 1;
+
+	    # print dependencies for .s files
+
+	    for (i = 1; i <= nsfiles[d]; i++) {
+		if (needheadings > 0) {
+			printf("\n%s\n%s%s\n%s\n\n", hdr4, hdr8, dirs[d], hdr4);
+			needheadings = 0;
+		}
+		fname = sfile[d "%" i];
+		tmpobj = "binaries/" substr(fname, 1, length(fname)-2) ".o";
+		tmpsrc = dirs[d] "/" fname;
+		printf(fmt4s, tmpobj ":", tmpsrc, tmpobj, tmpsrc);
+            }
+
+	    # print dependencies for .c files
+
+	    for (i = 1; i <= ncfiles[d]; i++) {
+		if (needheadings > 0) {
+			printf("\n%s\n%s%s\n%s\n\n", hdr4, hdr8, dirs[d], hdr4);
+			needheadings = 0;
+		}
+		fname = cfile[d "%" i];
+		tmpobj = "binaries/" substr(fname, 1, length(fname)-2) ".o";
+		tmpsrc = dirs[d] "/" fname;
+		printf(fmt4c, tmpobj ":", tmpsrc, tmpobj, tmpsrc);
+            }
+	    
+	}
+	printf("\nobjs:	${OBJ_FILES}\n");
+
+	printf("\nlist_obj:\n\t@echo ${OBJ_FILES}\n");
+
+	printf("\nlist_csrc:\n\t@echo ${SRC_CFILES}\n");
+
+	printf("\nlist_ssrc:\n\t@echo ${SRC_SFILES}\n");
+
+	printf("\n# Export variables for recursive make calls (such as the library)\n\nexport\n\n");
+} '
