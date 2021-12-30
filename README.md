@@ -10,9 +10,10 @@ environment by setting up a TFTP server to quickly load images through a network
 2. [Setup a TFTP server for faster image loading](#section2)
 
 **Warning:** the source code provided here is untouched from the original
-[Xinu website](https://xinu.cs.purdue.edu/). As it is, it crashes at startup on the BBB while trying to perform an
-initial setup for the network interface. After performing the steps on this first section you will have the tools
- necessary to mitigate or fix this crash.
+[Xinu website](https://xinu.cs.purdue.edu/). As it is, it crashes at startup on the BBB while trying to test for a 
+network link. After performing the steps on this first section you will have the tools necessary to mitigate or fix this crash. *If you do connect the board to a network link, you won't have this error.*
+
+**Fix:** The issue is on the file **device/eth/ethinit.c** starting on function eth_phy_reset().
 
 ---
 
