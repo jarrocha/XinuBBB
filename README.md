@@ -1,5 +1,7 @@
 ## **Hardware Setup**
 
+---
+
 If you rather work with VMs, check the guide folder. If you get any issues let me know.
 The first section does a step-by-step setup of UBoot with BBB, the second section automates the development 
 environment by setting up a TFTP server to quickly load images through a network link instead of using an SD card.
@@ -11,6 +13,8 @@ environment by setting up a TFTP server to quickly load images through a network
 [Xinu website](https://xinu.cs.purdue.edu/). As it is, it crashes at startup on the BBB while trying to perform an
 initial setup for the network interface. After performing the steps on this first section you will have the tools
  necessary to mitigate or fix this crash.
+
+---
 
 ### **1. Setup for BeagleBone Black** <div id="section1"/>
 You can use the mainline u-boot for beaglebone.
@@ -61,6 +65,13 @@ uenvcmd=run boot_mmc
 * The load location is important, it should point to the header.
 * This location was obtained with *iminfo*
 
+**Update:** Thanks to user Kikou1998. Newer versions of uboot work with the address given after the
+kernel build which is 0x81000000. Check the picture below.
+
+![Pic8](/assets/pic8.png)
+
+
+
 #### **Kernel**
 * Go to the Xinu BB source, then to */compile*
 * Run *make*
@@ -79,6 +90,8 @@ sudo minicom -D /dev/ttyUSB0 -c on -b 115200
 ```
 * At the end, you should get the loading screen.
 ![Pic3](/assets/pic4.png)
+
+---
 
 ### **2. Setup a TFTP server for faster image loading** <div id="section2"/>
 I recommend doing the previous work just to make sure that your development environment is ready. After that is done
