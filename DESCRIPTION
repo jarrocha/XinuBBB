@@ -1,1 +1,21 @@
 This directory holds Xinu sources for the Beaglebone Black.
+
+If you followed the
+[jarrocha/XinuBBB](https://github.com/jarrocha/XinuBBB/tree/main)
+instructions and your Beaglebone Black fails to boot Xinu with this
+error, then you may need to modify your `uEnv.txt` file.
+
+    Running uenvcmd ...
+    reading xinu.boot
+    ##### bytes read in 10 ms (#.# MiB/s)
+    Wrong Image Format for bootm command
+    ERROR: can't get kernel image!
+
+In that case, use this `uEnv.txt` file with the build's `xinu` binary
+(no extension) instead.  This uEnv file gives the binary's memory
+location to both fatload and the `bootm` command.
+
+    bootfile=xinu
+    memloc=0x81000000
+    boot_mmc=fatload mmc 0 ${memloc} ${bootfile}; bootm ${memloc}
+    uenvcmd=run boot_mmc
